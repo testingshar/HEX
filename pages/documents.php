@@ -5,10 +5,8 @@
   <title>Страница документов</title>
   <link href="../css/style.css" type="text/css" rel="stylesheet">
 </head>
-  <?php 
-include 'header.html';
-  ?>
 <body>
+<?php include $_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR . 'header.html'; ?>
 <div class="wrapper">
   <main>
 <h1>Данная страница содержит перечень документов</h1>
@@ -24,15 +22,7 @@ include 'header.html';
       <li>Гидравлические и пневматические системы</li>
     </ul>
   </main>
-  <footer>
-    <a href="https://vk.com/" target="_blank"><img src="../images/vk.png"></a>
-    <a href="http://ok.ru/" target="_blank"><img src="../images/oc.png"></a>
-    <a href="https://www.facebook.com" target="_blank"><img src="../images/fb.png"></a>
-    <a href="https://twitter.com" target="_blank"><img src="../images/tw.png"></a>
-    <a href="https://instagram.com/" target="_blank"><img src="../images/insta.png"></a>
-    <br>
-    Все права не защищены, всех прав не защитить! )))
-  </footer>
+  <?php include $_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR . 'footer.html'; ?>
 </div>
 </body>
 </html>
